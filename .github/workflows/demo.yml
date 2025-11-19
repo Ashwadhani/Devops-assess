@@ -23,16 +23,16 @@ jobs:
       # Build image
       - name: Build Docker image
         run: |
-          docker build -t Ashwadhani/cicd-demo:latest .
+          docker build -t shrivarshini1504/cicd-demo:latest .
 
       # Push image
       - name: Push Docker image
         run: |
-          docker push Ashwadhani/cicd-demo:latest
+          docker push shrivarshini1504/cicd-demo:latest
 
       # Echo deployment instructions
       - name: Deployment notes
         run: |
           echo "To deploy locally, run:"
-          echo "docker pull Ashwadhani/cicd-demo:latest"
-          echo "docker run -d -p 8080:80 Ashwadhani/cicd-demo:latest"
+          echo "docker pull shrivarshini1504/cicd-demo:latest"
+          echo "docker run -d -p 8080:80 shrivarshini1504/cicd-demo:latest"
